@@ -1,0 +1,55 @@
+---
+- name: Install Docker
+  hosts: all
+  become: true
+  tasks:
+  # Обновление пакетов
+  - name: APT Get Update 1
+    become: true
+    apt:
+      update_cache: yes
+
+  # Установка нужных пакетов        
+  - name: APT Get Install Packages 1
+    action: apt pkg={{item}} state=installed
+    with_items:
+       - apt-transport-https
+       - ca-certificates
+       - curl
+       - software-properties-common
+
+  # Добавим ключ репозитория для последующей работы с ним
+  - name: Add APT key
+    apt_key:
+      id: 0EBFCD88
+      keyserver: keyserver.ubuntu.com
+
+  # Подключаем репозиторий с пакетами mongodb
+  - name: Add APT repository
+    apt_repository:
+      repo: deb [ arch=amd64,arm64 ] https://download.docker.com/linux/ubuntu bionic stable
+      state: present
+  
+  # Обновление пакетов
+  - name: APT Get Update 2
+    become: true
+    apt:
+      update_cache: yes
+
+  # Выполним установку пакета
+  - name: Install Docker CE
+    apt:
+      name: docker-ce
+      allow_unauthenticated: yes
+      state: present
+
+  # Установка нужных пакетов        
+  - name: APT Get Install Packages 2
+    action: apt pkg={{item}} state=installed
+    with_items:
+       - python
+       - python-pip
+
+  # Установка Docker Compose
+  - name: install docker-compose package
+    pip: name=docker-compose
