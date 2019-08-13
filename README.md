@@ -42,7 +42,7 @@ makalexs microservices repository
  - Выставил label с темой домашнего задания
 
 
-# Выполнено ДЗ №3
+# Выполнено ДЗ №4
  - Научился работать с сетями в Docker
  - Научился использовать docker-compose
 
