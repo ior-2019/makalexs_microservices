@@ -21,7 +21,7 @@ makalexs microservices repository
 
 ## PR checklist
  - Выставил label с темой домашнего задания
- 
+
 
 # Выполнено ДЗ №3
  - Научился описывать и собирать Docker-образы для сервисного приложения
@@ -37,6 +37,23 @@ makalexs microservices repository
  - Улучшен образ ui
  - *Создан образ ui на основе Alpine
  - Перезапущено приложение с volume
+
+## PR checklist
+ - Выставил label с темой домашнего задания
+
+
+# Выполнено ДЗ №3
+ - Научился работать с сетями в Docker
+ - Научился использовать docker-compose
+
+## В процессе сделано:
+ - Подготовил и настройл окружение
+ - Запустил образы с drivers: none, host, bridge, просмотрел созданные namespaces
+ - Создана новая docker сеть типа bridge, перезапущены контейнеры с новыми network aliases
+ - Просмотрены созданные записи iptables на docker host
+ - Установлен docker-compose, при помощи него запущено приложение (с использованием переменных)
+ - Настроен новый префикс для контейнеров - COMPOSE_PROJECT_NAME=microservices
+ - *Создан docker-composer.override.yml (подключение volume к ui, start puma with --debug and -w 2)
 
 ## PR checklist
  - Выставил label с темой домашнего задания
