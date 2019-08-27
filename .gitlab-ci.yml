@@ -16,8 +16,9 @@ before_script:
 
 build_job:
   stage: build
-  script:
+  before_script:
     - cd src
+  script:
     - docker compose up -d
 
 test_unit_job:
