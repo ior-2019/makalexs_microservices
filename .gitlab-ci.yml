@@ -13,12 +13,12 @@ variables:
 before_script:
   - cd reddit
   - bundle install
-  - apk add --no-cache py2-pip && pip install docker-compose
 
 build_job:
   stage: build
   before_script:
     - cd src
+    - apk add --no-cache py2-pip && pip install docker-compose
   script:
     - docker compose up -d
 
