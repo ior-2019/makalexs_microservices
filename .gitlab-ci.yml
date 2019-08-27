@@ -1,4 +1,4 @@
-image: docker:latest
+image: docker:stable
 
 stages:
   - build
@@ -8,7 +8,7 @@ stages:
   - production
 
 variables:
-  DATABASE_URL: 'mongodb://mongo/user_posts'
+  DATABASE_URL: 'mongo'
 
 build_job:
   stage: build
