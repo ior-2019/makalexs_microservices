@@ -15,7 +15,7 @@ build_job:
   before_script:
     - apk update
     - apk upgrade
-    - apk add python python-dev py-pip build-base
+    - apk add --no-cache py-pip python-dev libffi-dev openssl-dev gcc libc-dev make
     - pip install docker-compose
 
   script:
