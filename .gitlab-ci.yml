@@ -16,7 +16,7 @@ build_job:
   - apk update
   - apk add --no-cache py-pip python-dev libffi-dev openssl-dev gcc libc-dev make
   - pip install docker-compose
-  - docker-compose -f src/docker-compose.yml up -d
+  - docker-compose -f src/docker-compose.yml up -d --env-file=src/.env
 
 test_unit_job:
   stage: test
