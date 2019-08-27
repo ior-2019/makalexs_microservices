@@ -12,10 +12,8 @@ variables:
 
 build_job:
   stage: build
-
   script:
   - apk update
-  - apk upgrade
   - apk add --no-cache py-pip python-dev libffi-dev openssl-dev gcc libc-dev make
   - pip install docker-compose
   - docker-compose -f src/docker-compose.yml up -d
