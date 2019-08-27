@@ -57,3 +57,5 @@ makalexs microservices repository
 
 ## PR checklist
  - Выставил label с темой домашнего задания
+=======
+# example
