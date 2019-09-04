@@ -1,5 +1,0 @@
-project     = "docker-248905"
-private_key = "~/.ssh/id_rsa"
-docker_instance_image  = "docker-instance-image"
-region      = "europe-west1"
-zone        = "europe-west1-b"
