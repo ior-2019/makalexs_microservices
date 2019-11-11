@@ -161,3 +161,15 @@ makalexs microservices repository
 ## PR checklist
  - Выставил label с темой домашнего задания
  - Ссылка на Docker Hub - https://cloud.docker.com/u/makalexs/repository/docker/makalexs/
+
+# Выполнено ДЗ №8
+ - Разобрал на практике все компоненты Kubernetes, развернуть их вручную используя The Hard Way
+ - Ознакомился с описанием основных примитивов нашего приложения и его дальнейшим запуском в Kubernetes
+
+## В процессе сделано:
+ - Разобрать на практике все компоненты Kubernetes, развернуть их вручную используя The Hard Way
+ - Ознакомиться с описанием основных примитивов нашего приложения и его дальнейшим запуском в Kubernetes
+
+## PR checklist
+ - Выставил label с темой домашнего задания
+ - Ссылка на Docker Hub - https://cloud.docker.com/u/makalexs/repository/docker/makalexs/
