@@ -173,3 +173,21 @@ makalexs microservices repository
 ## PR checklist
  - Выставил label с темой домашнего задания
  - Ссылка на Docker Hub - https://cloud.docker.com/u/makalexs/repository/docker/makalexs/
+ 
+
+# Выполнено ДЗ №9
+ - Развернул локальное окружение для работы с Kubernetes
+ - Развернул Kubernetes в GKE
+ - Запустил reddit в Kubernetes
+
+## В процессе сделано:
+ - Развернул локальное окружениие при помощи Minikube (hypervisor = HyperV)
+ - Рассмотрел методы работы с minikube при помощи kubectl
+ - Запустил приложение reddit в minikube при помощи kubectl, для этого добавил проброс портов, сервисы
+ - Научился работать с namespaces
+ - Развернул кластер kubernetes при помощи Google Kubernetes Engine, выложил в него приложение
+ - *Развернул кластер kubernetes при помощи Terraform
+
+## PR checklist
+ - Выставил label с темой домашнего задания
+ - Ссылка на Docker Hub - https://cloud.docker.com/u/makalexs/repository/docker/makalexs/
