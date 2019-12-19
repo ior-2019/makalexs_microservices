@@ -191,3 +191,20 @@ makalexs microservices repository
 ## PR checklist
  - Выставил label с темой домашнего задания
  - Ссылка на Docker Hub - https://cloud.docker.com/u/makalexs/repository/docker/makalexs/
+
+
+# Выполнено ДЗ №10
+ - Проработаны вопросы: Ingress Controller, Ingress, Secret, TLS, LoadBalancer Service, Network Policies, PersistentVolumes, PersistentVolumeClaims
+ - Отработаны вопросы сетевого взаимодействия, работа с Service, Node Port и т.п.
+
+## В процессе сделано:
+ - Настроен кластер kubernetes (из прошлого урока)
+ - Проверены моменты работы с kube-dns и без него
+ - Отработаны вопросы сетевого взаимодействия, работа с Service, Node Port, LoadBalancer, Ingress, Secret, TLS
+ - Настрены Network Policies
+ - Отработана методика взаимодействия в кластере через Volumes and Volumes Claims
+ 
+
+## PR checklist
+ - Выставил label с темой домашнего задания
+ - Ссылка на Docker Hub - https://cloud.docker.com/u/makalexs/repository/docker/makalexs/

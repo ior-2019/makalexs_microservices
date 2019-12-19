@@ -7,7 +7,7 @@ provider "google" {
   # Версия провайдера
   version = "3.0.0-beta.1"
   # ID проекта
-  project = "premium-state-257009"
+  project = "peaceful-tide-260113"
   region  = "us-west1-a"
   # Credentials
   credentials = "${file("devops.json")}"
@@ -41,7 +41,7 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
 
   node_config {
     preemptible  = true
-    machine_type = "g1-small"
+    machine_type = "n1-standard-2"
 
     metadata = {
       disable-legacy-endpoints = "true"
@@ -52,4 +52,17 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
       "https://www.googleapis.com/auth/monitoring",
     ]
   }
+}
+
+resource "google_compute_firewall" "default" {
+  name    = "devops-cluster-firewall"
+  network = "default"
+  
+  source_ranges = []
+
+  allow {
+    protocol = "tcp"
+    ports    = ["443", "30000-32767"]
+  }
+
 }
