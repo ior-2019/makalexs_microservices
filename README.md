@@ -208,3 +208,21 @@ makalexs microservices repository
 ## PR checklist
  - Выставил label с темой домашнего задания
  - Ссылка на Docker Hub - https://cloud.docker.com/u/makalexs/repository/docker/makalexs/
+ 
+
+# Выполнено ДЗ №11
+ - Отработаны моменты работы с Helm
+ - Произведено развертывание Gitlab в Kubernetes
+ - Осуществлен запуск CI/CD конвейера в Kubernetes
+
+## В процессе сделано:
+ - Произведена установка Helm
+ - Созданы Charts для установки нашего приложения через Helm
+ - Настроены зависимости для установки всего приложения
+ - Через Chart установлен Gitlab
+ - Запущены и настроены проект
+ - Настроены CI/CD для проектов
+ 
+## PR checklist
+ - Выставил label с темой домашнего задания
+ - Ссылка на Docker Hub - https://cloud.docker.com/u/makalexs/repository/docker/makalexs/
